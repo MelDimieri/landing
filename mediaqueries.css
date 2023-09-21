@@ -1,0 +1,182 @@
+/*******TABLET*******/
+@media (max-width: 992px) {
+  /*******NAVBAR*******/
+  #navbar {
+    gap: 10px;
+  }
+
+  .nav {
+    position: absolute;
+    top: 65px;
+    left: 5%;
+    right: 5%;
+    width: 80%;
+    flex-direction: column;
+    background: linear-gradient(to top, #e0def7, #fff);
+    border: 2px solid;
+    border-top: 0;
+    border-radius: 0px 0px 15px 15px;
+    align-items: flex-start;
+    padding: 25px 20px;
+    gap: 25px;
+    z-index: 2;
+    display: none;
+  }
+
+  .menu-label {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+  }
+
+  .menu-label img {
+    height: 35px;
+    width: 35px;
+    border: 2px solid #009bdf;
+  }
+
+  #menu-toggle:checked + .nav {
+    display: flex;
+  }
+
+  /*******HERO*******/
+  #hero {
+    max-width: 700px;
+    height: 500px;
+    gap: 60px;
+    padding: 80px;
+  }
+
+  .text-info {
+    gap: 20px;
+    width: 300px;
+  }
+
+  .text-info h1 {
+    font-size: 22px;
+  }
+
+  .photo-info img {
+    height: 200px;
+    width: 300px;
+  }
+
+  /*******ABOUT*******/
+  #about {
+    max-width: 700px;
+    height: 300px;
+  }
+
+  #about h2 {
+    font-size: 20px;
+  }
+
+  /*******CARDS*******/
+  #cards {
+    max-width: 700px;
+    height: 600px;
+  }
+
+  .cards-container {
+    max-width: 700px;
+    gap: 15px;
+  }
+
+  .info-cards h2 {
+    font-size: 20px;
+  }
+
+  .info-cards h3 {
+    font-size: 18px;
+  }
+
+  /*******CONTACTO*******/
+
+  #contacto {
+    gap: 40px;
+    max-width: 700px;
+  }
+
+  .contact-text {
+    padding: 40px;
+  }
+  .contact-text h2 {
+    font-size: 20px;
+  }
+
+  /*******FOOTER*******/
+  .footer .footer-list {
+    gap: 20px;
+  }
+}
+
+/****************************************************************/
+/*******MOBILE*******/
+@media (max-width: 552px) {
+  .logo {
+    padding-right: 200px;
+  }
+
+  /*******HERO*******/
+  #hero {
+    max-width: 500px;
+    height: 500px;
+    gap: 40px;
+  }
+
+  .text-info {
+    width: 180px;
+  }
+
+  .text-info h1 {
+    font-size: 20px;
+  }
+
+  .photo-info img {
+    width: 200px;
+  }
+
+  /*******ABOUT*******/
+  #about {
+    max-width: 350px;
+    height: 350px;
+    padding: 60px;
+  }
+
+  /*******CARDS*******/
+  #cards {
+    max-width: 500px;
+    height: 1200px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  /*******CONTACTO*******/
+  #contacto {
+    max-width: 500px;
+    gap: 5px;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .contact-text {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .contact-img {
+    height: 180px;
+    width: 80%;
+  }
+  /*******FOOTER*******/
+
+  footer .footer-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

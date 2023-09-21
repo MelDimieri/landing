@@ -9,6 +9,7 @@
   --text-nav: 16px;
   --text-h1: 24px;
   --text-h2: 22px;
+  --text-h3: 20px;
   --text-p: 14px;
 }
 
@@ -20,6 +21,7 @@
 
 body {
   background-image: url(./bg-09-free-img.jpg);
+  background-size: cover;
   font-family: "poppins", sans-serif;
 }
 
@@ -30,13 +32,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-white);
+  background: linear-gradient(to top, #e0def7, #fff);
   position: fixed;
   z-index: 2;
   top: 0;
 }
 
 /*******NAVBAR*******/
+
+#menu-toggle,
+.menu-label {
+  display: none;
+}
 
 #navbar {
   font-size: var(--text-nav);
@@ -47,13 +54,12 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--color-white);
 }
 
 ul {
   display: flex;
   list-style: none;
-  gap: 30px;
+  gap: 20px;
 }
 
 ul a {
@@ -70,7 +76,7 @@ ul a:hover {
 }
 
 .logo {
-  padding-right: 500px;
+  padding-right: 400px;
   height: 60%;
 }
 
@@ -90,7 +96,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  margin: 80px;
+  margin: 60px;
   max-width: 1000px;
   padding: 80px 20px;
 }
@@ -98,10 +104,10 @@ main {
 .text-info {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   gap: 30px;
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .text-info h1 {
@@ -120,8 +126,8 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: end;
-  max-width: 500px;
+  align-items: center;
+  max-width: 50%;
   height: 300px;
 }
 
@@ -145,28 +151,161 @@ main {
 /*******ABOUT*******/
 
 #about {
-  font-size: var(--text-p);
-  color: var(--color-white);
-  max-width: 1000px;
-  padding: 40px;
-  margin: 40px;
-  height: 250px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
   text-align: center;
-  gap: 30px;
-  background-color: var(--color-darkblue);
+  gap: 20px;
+  color: var(--color-white);
+  max-width: 1000px;
+  min-width: 400px;
+  padding: 40px;
+  margin-bottom: 80px;
+  height: 250px;
+  background: linear-gradient(40deg, #4e285a, #344a91);
   border-radius: 10px;
 }
 
 #about p > span {
-  font-weight: 900;
+  font-weight: 700;
   font-size: var(--text-nav);
   color: var(--color-blue);
 }
 
-h2 {
-  font-size: var(--text-h1);
+#about h2 {
+  font-size: var(--text-h2);
+}
+
+#about p {
+  font-size: var(--text-p);
+}
+
+/*******CARDS*******/
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  gap: 20px;
+  color: var(--color-white);
+  max-width: 1000px;
+  padding: 40px;
+  margin: 60px;
+  height: 500px;
+  background: linear-gradient(40deg, #361e3e, #1b2750);
+  border-radius: 10px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: 500px;
+  max-width: 1000px;
+}
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 40px;
+}
+
+.info-cards h2 {
+  font-size: var(--text-h2);
+}
+
+.info-cards h3 {
+  font-size: var(--text-h3);
+}
+
+#cards p {
+  font-size: var(--text-p);
+}
+
+.info-cards p {
+  font-size: var(--text-p);
+}
+
+.icons {
+  display: flex;
+  max-width: 25%;
+}
+
+/*******CONTACTO*******/
+
+#contacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1000px;
+  height: 500px;
+  margin: 30px 0;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  justify-content: flex-start;
+  padding: 80px;
+  gap: 15px;
+}
+
+.contact-text h2 {
+  font-size: var(--text-h2);
+  color: var(--color-blue);
+}
+
+.contact-text p {
+  font-size: var(--text-p);
+}
+
+.contact-text p:nth-of-type(2) {
+  text-decoration: underline;
+}
+
+.contact-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  height: 300px;
+}
+
+.contact-img img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+/*******FOOTER*******/
+
+footer .footer-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: var(--text-nav);
+  padding: 40px;
+}
+
+.footer-list a {
+  color: var(--color-white);
 }

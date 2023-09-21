@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>webFony</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
+
   <body>
     <!--header-->
+
     <header>
       <img class="logo" src="./logo-1.png" alt="logo" />
       <nav id="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <img src="./menu.png" alt="" class="menu-icon" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="nav">
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Servicios</a></li>
@@ -20,21 +27,19 @@
       </nav>
     </header>
 
+    <!-- hero-->
+
     <main>
-      <!-- hero-->
       <section id="hero">
         <div class="text-info">
           <h1>Desarrollo y diseño web</h1>
-
           <p>
             Utilizamos lo último en tecnología web: HTML5, CSS3, Javascript, y
             WordPress. Diseñamos a medida tu sitio, para que sea único,
             atractivo, dinámico y responsive.
           </p>
-
           <a href="#">Saber más</a>
         </div>
-
         <div class="photo-info">
           <img src="./keyboard.jpg" alt="photo" />
         </div>
@@ -51,6 +56,70 @@
           solución a medida de nuestros clientes.
         </p>
       </section>
+
+      <!--cards-->
+
+      <section id="cards">
+        <h2>Lo que hacemos</h2>
+        <p>Estos son algunos de los servicios que tenemos para ofrecerte</p>
+        <div class="cards-container">
+          <div class="info-cards">
+            <img class="icons" src="./programmer.png" alt="Desarrollo" />
+            <h3>Desarrollo web</h3>
+            <p>
+              Desarrollo web profesional utilizando lo último en tecnologías
+              web: PHP, HTML5, CSS3, Javascript, MYSQL y WordPress.
+            </p>
+          </div>
+          <div class="info-cards">
+            <img class="icons" src="./technical-support.png" alt="mant" />
+            <h3>Mantenimiento</h3>
+            <p>
+              Actualizaciones de Plugins, realización de backups automáticos,
+              restauración y limpieza en caso de Hackeos.
+            </p>
+          </div>
+          <div class="info-cards">
+            <img
+              class="icons"
+              src="./online-marketing.png"
+              alt="tienda-online"
+            />
+            <h3>E-commerce</h3>
+            <p>
+              Construimos tu sitio de e-commerce con el que podrás vender online
+              a donde quieras tus productos de una manera sencilla y segura.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--contacto-->
+
+      <section id="contacto">
+        <div class="contact-text">
+          <h2>Contactanos</h2>
+          <p>Buenos Aires, Argentina</p>
+          <p>melidimieri@gmail.com</p>
+          <p>+54 9 2915747009</p>
+        </div>
+        <div class="contact-img">
+          <img src="./foto1.jpg" alt="foto contacto" />
+        </div>
+      </section>
     </main>
+
+    <!--footer-->
+
+    <footer>
+      <div>
+        <ul class="footer-list">
+          <li><a href="#">Webfony</a></li>
+          <li><a href="#">Copyright @2023</a></li>
+          <li><a href="#">Politica de privacidad</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
